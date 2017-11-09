@@ -1,0 +1,39 @@
+﻿html {
+    background-image: url("../../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    background-color: transparent;
+    height: 100%;
+}
+
+.fill {
+    min-height: 100vh;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.margin-top-bottom {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#loading .svg-icon-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+.navbar-icon {
+    font-size: 24px !important;
+    padding: 13px !important;
+}

@@ -1,0 +1,16 @@
+﻿{
+  "commons": {
+    "appTitle": "SISEC",
+    "menu": {
+      "adm": "Administrativo",
+      "the": "Teórico",
+      "age": "Agendas",
+      "eva": "Exámen",
+      "cer": "Certificador",
+      "opt": "Opciones",
+      "logout": "Salir",
+      "logoutTitle": "Cerrar sesión",
+      "passChange": "Cambio de clave"
+    }
+  }
+}

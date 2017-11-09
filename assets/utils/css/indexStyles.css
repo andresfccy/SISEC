@@ -1,0 +1,10 @@
+﻿html {
+    background-image: url("../../image-resources/bg-cea.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}

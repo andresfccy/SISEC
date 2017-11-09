@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      ng-app="sisecEnsenanzaApp">
+<head>
+    <title>SISEC - CEA</title>
+    <base href="/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Olimpia Management">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icons/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/utils/css/boilerplate.css" rel="stylesheet" />
+    <link href="assets/utils/css/border-radius.css" rel="stylesheet" />
+    <link href="assets/utils/css/utils.css" rel="stylesheet" />
+    <link href="assets/utils/css/default.css" rel="stylesheet" />
+    <link href="assets/utils/css/components_default.css" rel="stylesheet" />
+    <link href="assets/utils/css/buttons.css" rel="stylesheet" />
+    <link href="assets/utils/css/styles.css" rel="stylesheet" />
+
+    <!-- Dependencies' Styles -->
+    <link href="node_modules/angular-growl-v2/build/angular-growl.min.css" rel="stylesheet" />
+    <link href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <link ng-controller="commons.commonController as commonCtrl" 
+          ng-if="commonCtrl.isHome()" 
+          href="assets/utils/css/indexStyles.css" 
+          rel="stylesheet" />
+
+    <!-- Useful directives -->
+    <div loading></div>
+    <div growl></div>
+
+    <!-- Loader before AngularJS -->
+    <div id="loading" ng-if="false">
+        <div class="svg-icon-loader">
+            <img src="assets/images/svg-loaders/bars.svg" width="40" alt="">
+        </div>
+    </div>
+
+    <!-- Views rendering div -->
+    <div ui-view ng-cloak></div>
+    
+    <!-- JS Dependencies -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- AngularJS Dependencies -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <script src="node_modules/angular-translate/dist/angular-translate.min.js"></script>
+    <script src="node_modules/angular-growl-v2/build/angular-growl.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="node_modules/ngstorage/ngStorage.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+    <script src="node_modules/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+    <script src="node_modules/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+    <script src="node_modules/angular-ui-router-title/angular-ui-router-title.js"></script>
+
+    <!-- AngularJS App-->
+    <script src="app/app.js"></script>
+
+    <!-- CommonsModule -->
+    <script src="app/commons/commonsModule.js"></script>
+     <script src="app/commons/directives/loadingDirective.js"></script> 
+    <script src="app/commons/routes/commonsRoutes.js"></script>
+    <script src="app/commons/routes/errorsRoutes.js"></script>
+    <script src="app/commons/services/commonConstants.js"></script>
+
+    <!-- AccountModule -->
+    <script src="app/account/accountModule.js"></script>
+    <script src="app/account/routes/accountRoutes.js"></script>
+    <script src="app/account/controllers/accountController.js"></script>
+
+    <!-- AdministrativeModule -->
+    <script src="app/1_administrativo/administrativeModule.js"></script>
+    <script src="app/1_administrativo/routes/administrativeRoutes.js"></script>
+    <script src="app/1_administrativo/controllers/administrativeController.js"></script>
+</body>
+</html>
