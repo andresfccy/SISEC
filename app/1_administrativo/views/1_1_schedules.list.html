@@ -1,0 +1,21 @@
+﻿<!-- controller: admCtrl defined at administrativeRoutes.js -->
+<table class="table table-hover dataTable table-responsive">
+    <thead>
+        <tr>
+            <th>{{'adm.sch.type'|translate}}</th>
+            <th>{{'adm.sch.start_hr'|translate}}</th>
+            <th>{{'adm.sch.finish_hr'|translate}}</th>
+            <th>{{'commons.actions'|translate}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="actualSch in admCtrl.schedules">
+            <td>{{actualSch.TipoObjeto}}</td>
+            <td>{{actualSch.HoraInicio}}</td>
+            <td>{{actualSch.HoraFin}}</td>
+            <td>
+                <span class="glyphicon glyphicon-edit"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

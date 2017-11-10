@@ -1,0 +1,27 @@
+﻿<!-- controller: admCtrl defined at administrativeRoutes.js -->
+<table class="table table-hover dataTable table-responsive">
+    <thead>
+        <tr>
+            <th>{{'adm.cls.name'|translate}}</th>
+            <th>{{'adm.cls.address'|translate}}</th>
+            <th>{{'adm.cls.width'|translate}}</th>
+            <th>{{'adm.cls.large'|translate}}</th>
+            <th>{{'adm.cls.cap'|translate}}</th>
+            <th>{{'adm.cls.start'|translate}}</th>
+            <th>{{'adm.cls.finish'|translate}}</th>
+            <th>{{'adm.cls.type'|translate}}</th>
+            <th>{{'adm.cls.state'|translate}}</th>
+            <th>{{'commons.actions'|translate}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="actualCls in admCtrl.classrooms">
+            <td>{{actualCls.TipoObjeto}}</td>
+            <td>{{actualCls.HoraInicio}}</td>
+            <td>{{actualCls.HoraFin}}</td>
+            <td>
+                <span class="glyphicon glyphicon-edit"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

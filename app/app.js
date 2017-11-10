@@ -9,6 +9,7 @@ var app = angular.module('sisecEnsenanzaApp', [
     , 'ngStorage'
     , 'ngAnimate'
     , 'ui.router.title'
+    , 'ui.bootstrap'
 
     // Módulos de la aplicación 
     // NOTA: Cada componente se tiene que registrar en la aplicación (en la lista siguiente) para ser incluído

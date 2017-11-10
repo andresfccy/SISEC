@@ -14,8 +14,27 @@ administrativeModule
 
             // Instancia del controlador dentro de la variable self
             var self = this;
+            self.init = init;
+            self.schedules = [
+                {
+                    "TipoObjeto": "tipo1",
+                    "HoraInicio": "8:00",
+                    "HoraFin": "15:00"
+                }
+            ];
             
             // Funciones
             //TODO: All the logic
+            function init() {
+                if (isAdmHome()) {
+                    $state.go("administrativeHome.schedules");
+                }
+
+                // TODO: Init the lists
+            }
+
+            function isAdmHome() {
+                return ($location.path().split('/')[1] && $location.path().split('/')[1] == 'Administrativo');
+            }
         }
     ]);

@@ -1,1 +1,32 @@
-﻿<div ng-include="'app/commons/views/dashboardHeader.html'"></div>
+﻿<div ng-init="admCtrl.init()" ng-include="'app/commons/views/dashboardHeader.html'"></div>
+<div class="dashboard-container">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div ui-view></div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <uib-tabset active="activeJustified" justified="true">
+                <uib-tab ui-sref="administrativeHome.schedules" index="0" heading="{{'adm.schedules' | translate}}">
+                    <div ng-include="'app/1_administrativo/views/1_1_schedules.list.html'"></div>
+                </uib-tab>
+                <uib-tab ui-sref="administrativeHome.classrooms" index="1" heading="{{'adm.classrooms' | translate}}">
+                    <div ng-include="'app/1_administrativo/views/1_2_classrooms.list.html'"></div>
+                </uib-tab>
+                <uib-tab ui-sref="administrativeHome.users" index="2" heading="{{'adm.users' | translate}}">
+                    <div ng-include="'app/1_administrativo/views/1_3_users.list.html'"></div>
+                </uib-tab>
+                <uib-tab ui-sref="administrativeHome.students" index="3" heading="{{'adm.students' | translate}}">
+                    <div ng-include="'app/1_administrativo/views/1_4_students.list.html'"></div>
+                </uib-tab>
+                <uib-tab ui-sref="administrativeHome.vehicles" index="4" heading="{{'adm.vehicles' | translate}}">
+                    <div ng-include="'app/1_administrativo/views/1_5_vehicles.list.html'"></div>
+                </uib-tab>
+                <uib-tab ui-sref="administrativeHome.quality" index="5" heading="{{'adm.quality' | translate}}">
+
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</div>

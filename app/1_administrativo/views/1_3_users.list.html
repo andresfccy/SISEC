@@ -1,0 +1,23 @@
+﻿<!-- controller: admCtrl defined at administrativeRoutes.js -->
+<table class="table table-hover dataTable table-responsive">
+    <thead>
+        <tr>
+            <th>{{'adm.usr.names'|translate}}</th>
+            <th>{{'adm.usr.document'|translate}}</th>
+            <th>{{'adm.usr.cel'|translate}}</th>
+            <th>{{'adm.usr.enrollment'|translate}}</th>
+            <th>{{'adm.usr.role'|translate}}</th>
+            <th>{{'commons.actions'|translate}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="actualUsr in admCtrl.users">
+            <td>{{actualUsr.TipoObjeto}}</td>
+            <td>{{actualUsr.HoraInicio}}</td>
+            <td>{{actualUsr.HoraFin}}</td>
+            <td>
+                <span class="glyphicon glyphicon-edit"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
